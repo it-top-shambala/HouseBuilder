@@ -6,5 +6,5 @@ namespace HouseBuilder.Factory;
 
 public interface IFactory<out T>
 {
-    public AFoundation Create();
+    public T Create();
 }

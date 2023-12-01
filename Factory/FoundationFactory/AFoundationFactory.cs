@@ -1,5 +1,4 @@
 ﻿using HouseBuilder.Model.Foundation;
-using HouseBuilder.Model.Wall;
 
 namespace HouseBuilder.Factory.FoundationFactory;
 

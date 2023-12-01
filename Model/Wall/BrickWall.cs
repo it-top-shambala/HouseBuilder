@@ -4,7 +4,7 @@ public class BrickWall : AWall
 {
     private const string MATERIAL = "Brick";
     
-    public BrickWall(double height, double length) : base(MATERIAL, height, length)
+    public BrickWall(double height, double weight) : base(MATERIAL, height, weight)
     {
     }
 }
