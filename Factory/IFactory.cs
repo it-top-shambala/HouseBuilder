@@ -1,9 +1,10 @@
 ﻿using HouseBuilder.Factory.FoundationFactory;
-using HouseBuilder.Factory.FundationFactory;
+using HouseBuilder.Model.Foundation;
+using HouseBuilder.Model.Wall;
 
 namespace HouseBuilder.Factory;
 
 public interface IFactory<out T>
 {
-    public RockFoundation Create();
+    public T Create();
 }
