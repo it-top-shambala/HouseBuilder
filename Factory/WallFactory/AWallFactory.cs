@@ -5,12 +5,12 @@ namespace HouseBuilder.Factory.WallFactory;
 public abstract class AWallFactory : IFactory<AWall>
 {
     public required double Height { get; init; }
-    public required double Weight { get; init; }
+    public required double Width { get; init; }
 
-    protected AWallFactory(double height, double weight)
+    protected AWallFactory(double height, double width)
     {
         Height = height;
-        Weight = weight;
+        Width = width;
     }
 
     public abstract AWall Create();

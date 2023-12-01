@@ -7,7 +7,7 @@ public abstract class AWall
 {
     public string Material { get; init; }
     public double Height { get; init; }
-    public double Weight { get; init; }
+    public double Width { get; init; }
 
     private readonly List<AWindow> _windows;
     public IEnumerable<AWindow> Windows => _windows;
@@ -15,11 +15,11 @@ public abstract class AWall
     private readonly List<ADoor> _doors;
     public IEnumerable<ADoor> Doors => _doors;
 
-    protected AWall(string material, double height, double weight)
+    protected AWall(string material, double height, double width)
     {
         Material = material;
         Height = height;
-        Weight = weight;
+        Width = width;
 
         _windows = new List<AWindow>();
         _doors = new List<ADoor>();
